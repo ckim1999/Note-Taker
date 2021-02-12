@@ -10,8 +10,10 @@ const PORT = 5000;
 
 // Routes
 
-// display index.html on server
+// send the index.html into the local server
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+// send the notes.html into the local server
+app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, 'notes.html')));
 
 // FUNCTIONS
 
